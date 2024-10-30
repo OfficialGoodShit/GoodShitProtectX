@@ -1,4 +1,4 @@
-# author : @modxashis
+# author : @goodshit
 # -*- coding: utf-8 -*-
 
 import os
@@ -28,8 +28,8 @@ banner = """
      dZP        qKRb
     dZP          qKKb
    fZP            SMMb
-   HZM            MMMM    {}Coded by {}: {}YT : MODXPRO OFFICIAL
-{}   FqM            MMM {}TG{}: {}TG : @MODXASHIS
+   HZM            MMMM    {}Coded by {}: {}YT : OFFICIAL GOODSHIT 
+{}   FqM            MMM {}TG{}: {}TG : @GOODSHIT
 {} __|'\ .        |\{}dS qML
 {} |    `.       | `' \{}Zq
 {}_)      \.{}___.{},|     .'
