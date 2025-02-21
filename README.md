@@ -31,3 +31,13 @@ git clone https://github.com/OfficialGoodShit/GoodShitProtectX.git
 cd GoodShitProtectX
 pip install -r requirements.txt
 python GoodshitMain.py
+
+📱 Android (Termux)
+Open Termux and install the required packages:
+pkg update && pkg upgrade -y
+pkg install git python python-pip -y
+Clone the repository and run the script:
+git clone https://github.com/OfficialGoodShit/GoodShitProtectX.git
+cd GoodShitProtectX
+pip install -r requirements.txt
+python GoodshitMain.py
