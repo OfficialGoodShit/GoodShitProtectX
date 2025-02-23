@@ -36,7 +36,7 @@ Open Command Prompt (cmd) and run:
 git clone https://github.com/OfficialGoodShit/GoodShitProtectX.git
 cd GoodShitProtectX
 pip install -r requirements.txt
-python GoodshitMain.py
+python SupremeGod.py
 
 ## 📱 Android (Termux)
 Open Termux and install the required packages:
@@ -46,4 +46,4 @@ Clone the repository and run the script:
 git clone https://github.com/OfficialGoodShit/GoodShitProtectX.git
 cd GoodShitProtectX
 pip install -r requirements.txt
-python GoodshitMain.py
+python SupremeGod.py
