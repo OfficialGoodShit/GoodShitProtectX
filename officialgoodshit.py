@@ -1,6 +1,6 @@
 import requests
 
-__ENDPOINT_URL__: str = "https://tryme.squareweb.app/api"
+__ENDPOINT_URL__: str = "https://SupremeGod.squareweb.app/api"
 
 class OfficialGoodShit:
     def __init__(self, access_key) -> None:
