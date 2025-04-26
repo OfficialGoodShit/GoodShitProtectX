@@ -597,20 +597,18 @@ if __name__ == "__main__":
                     print(Colorate.Horizontal(Colors.rainbow, 'Please try again.'))
                     sleep(2)
                     continue
-                elif service == 18:  # Unlock House 3
-    console.print("[%] Unlocking House 3: ", end=None)
-    if cpm.unlock_houses():
-        print(Colorate.Horizontal(Colors.rainbow, 'SUCCESSFUL'))
-        print(Colorate.Horizontal(Colors.rainbow, '======================================'))
-        answ = Prompt.ask("[?] Do You want to Exit ?", choices=["y", "n"], default="n")
-        if answ == "y":
-            print(Colorate.Horizontal(Colors.rainbow, f'Thank You for using our tool, please join our telegram channel: @{__CHANNEL_USERNAME__}.'))
-        else: continue
-    else:
-        print(Colorate.Horizontal(Colors.rainbow, 'FAILED.'))
-        print(Colorate.Horizontal(Colors.rainbow, 'Please try again.'))
-        sleep(2)
-        continue
+                elif service == 18: # Unlock House 3
+                console.print("[%] UNLOCKING HOUSE 3: ", end=None)
+                if cpm.unlock_houses():
+                    print(Colorate.Horizontal(Colors.rainbow, 'SUCCESSFUL'))
+                    answ = Prompt.ask("[?] DO YOU WANT TO EXIT ?", choices=["y", "n"], default="n")
+                    if answ == "y": print(Colorate.Horizontal(Colors.rainbow, f'THANK YOU FOR USING OUR TOOL, PLEASE JOIN OUR TELEGRAM CHANNEL: @{__CHANNEL_USERNAME__}'))
+                    else: continue
+                else:
+                    print(Colorate.Horizontal(Colors.rainbow, 'FAILED'))
+                    print(Colorate.Horizontal(Colors.rainbow, 'PLEASE TRY AGAIN'))
+                    sleep(2)
+                    continue
             elif service == 19: # Unlock Smoke
                 console.print("[%] Unlocking Smoke: ", end=None)
                 if cpm.unlock_smoke():
