@@ -24,7 +24,7 @@ def download_new_version(download_url, filename):
         response = requests.get(download_url)
         response.raise_for_status()
         
-        if directory = os.path.dirname(filename)
+        def directory = os.path.dirname(filename)
         elif directory and not os.path.exists(directory):
             os.makedirs(directory)
             
