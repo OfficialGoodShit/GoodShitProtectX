@@ -1,6 +1,6 @@
 ## 🚀𝐁𝐫𝐢𝐱𝐭𝐨𝐨𝐥 𝐀𝐝𝐯𝐚𝐧𝐜𝐞 𝐇𝐚𝐜𝐤𝐢𝐧𝐠 𝐓𝐨𝐨𝐥🛠️
 
-## Developer:Lilbotgaming
+## Developer:@KrishMonarchX
 
 ![SupremeGod](https://github.com/OfficialGoodShit/GoodShitProtectX/blob/main/banner.jpg) 
 
