@@ -11,7 +11,7 @@ from rich.style import Style
 import pystyle
 from pystyle import Colors, Colorate
 
-from aiden import OfficialGoodShit
+from aidenmainsecond import OfficialGoodShit
 
 __CHANNEL_USERNAME__ = "𝐁𝐑𝐈𝐗 𝐓𝐄𝐑𝐌𝐔𝐗 𝐓𝐎𝐎𝐋"
 __GROUP_USERNAME__   = "𝐁𝐑𝐈𝐗 𝐓𝐄𝐑𝐌𝐔𝐗 𝐓𝐎𝐎𝐋"
