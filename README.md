@@ -1,11 +1,11 @@
-## 🚀𝐒𝐮𝐩𝐫𝐞𝐦𝐞𝐆𝐨𝐝 𝐀𝐝𝐯𝐚𝐧𝐜𝐞 𝐇𝐚𝐜𝐤𝐢𝐧𝐠 𝐓𝐨𝐨𝐥🛠️
+## 🚀𝐁𝐫𝐢𝐱𝐭𝐨𝐨𝐥 𝐀𝐝𝐯𝐚𝐧𝐜𝐞 𝐇𝐚𝐜𝐤𝐢𝐧𝐠 𝐓𝐨𝐨𝐥🛠️
 
 ## Developer:Lilbotgaming
 
 ![SupremeGod](https://github.com/OfficialGoodShit/GoodShitProtectX/blob/main/banner.jpg) 
 
 # ⚡ About the Tool
-SupremeModzTool is an advanced hacking tool designed to unlock exclusive features in games. Developed by SupremeModzV1, it includes Anti-Ban and Anti-Blacklist protections, ensuring a safer experience.
+𝐁𝐫𝐢𝐱𝐭𝐨𝐨𝐥 is an advanced hacking tool designed to unlock exclusive features in games. Developed by 𝐁𝐫𝐢𝐱𝐭𝐨𝐨𝐥, it includes Anti-Ban and Anti-Blacklist protections, ensuring a safer experience.
 
 ## ✨ Features:
 ✔️ Unlock in-game currency and exclusive items
@@ -15,13 +15,13 @@ SupremeModzTool is an advanced hacking tool designed to unlock exclusive feature
 
 ## 🎁 Free Balance & Top-up
 🔹 Receive $1,000 in free balance upon activation!
-🔹 To purchase additional balance, contact: @lilbotgaming on Telegram
+🔹 To purchase additional balance, contact: @KrishMonarchX on Telegram
 
 ## 🔑 Access & Activation Key
-To use SupremeModzTool, you need an Access Key.
+To use 𝐁𝐫𝐢𝐱𝐭𝐨𝐨𝐥, you need an Access Key.
 
 ## 📢 How to get a Key?
-Send a message to our bot on Telegram: @@SupremeModzBOT
+Send a message to our bot on Telegram: @CPMBrixtoolV1Bot
 
 ## ❗ If your Key doesn't appear:
 Use the /start command in the bot.
@@ -36,7 +36,7 @@ Open Command Prompt (cmd) and run:
 git clone https://github.com/OfficialGoodShit/GoodShitProtectX.git
 cd GoodShitProtectX
 pip install -r requirements.txt
-python SupremeGod.py
+python aidentoolmain.py
 
 ## 📱 Android (Termux)
 Open Termux and install the required packages:
@@ -46,4 +46,4 @@ Clone the repository and run the script:
 git clone https://github.com/OfficialGoodShit/GoodShitProtectX.git
 cd GoodShitProtectX
 pip install -r requirements.txt
-python SupremeGod.py
+python aidentoolmain.py
