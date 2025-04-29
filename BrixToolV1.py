@@ -16,8 +16,8 @@ import datetime
 
 from BrixTool import OfficialGoodShit
 
-__CHANNEL_USERNAME__ = "HadjiOfficialChannel"
-__GROUP_USERNAME__   = "HadjiDiscussion"
+__CHANNEL_USERNAME__ = "𝐁𝐑𝐈𝐗 𝐓𝐄𝐑𝐌𝐔𝐗 𝐓𝐎𝐎𝐋"
+__GROUP_USERNAME__   = "𝐁𝐑𝐈𝐗 𝐓𝐄𝐑𝐌𝐔𝐗 𝐓𝐎𝐎𝐋"
 
 def signal_handler(sig, frame):
     print("\n Bye Bye...")
