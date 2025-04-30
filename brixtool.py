@@ -4,7 +4,7 @@ from time import sleep
 
 __ENDPOINT_URL__: str = "https://jmgaragee.squareweb.app/api"
 
-class CPMAyan:
+class OfficialGoodShit:
     def __init__(self, access_key) -> None:
         self.auth_token = None
         self.access_key = access_key
