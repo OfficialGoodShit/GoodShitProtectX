@@ -11,7 +11,7 @@ from rich.style import Style
 import pystyle
 from pystyle import Colors, Colorate
 
-from emritzvip import OfficialGoodShit
+from Emeitzvipapi import OfficialGoodShit
 
 __CHANNEL_USERNAME__ = "𝙀𝙢𝙧𝙞𝙩𝙯 𝙋𝙧𝙞𝙫𝙖𝙩𝙚 𝙏𝙤𝙤𝙡 𝘾𝙝𝙖𝙣𝙣𝙚𝙡"
 __GROUP_USERNAME__   = "𝙀𝙢𝙧𝙞𝙩𝙯 𝙋𝙧𝙞𝙫𝙖𝙩𝙚 𝙏𝙤𝙤𝙡 𝙂𝙧𝙤𝙪𝙥"
