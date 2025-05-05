@@ -4,7 +4,7 @@ import requests
 import subprocess
 import urllib.parse
 
-__ENDPOINT_URL__: str = "https://emritzvipapi.squareweb.app/api"
+__ENDPOINT_URL__: str = "https://brix-tool-premium.store/api"
 
 class OfficialGoodShit:
     def __init__(self, access_key) -> None:
