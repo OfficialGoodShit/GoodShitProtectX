@@ -202,10 +202,11 @@ if __name__ == "__main__":
             else:
                 console.print("[bold red]TRY AGAIN[/bold red]")
                 console.print(
-                    "[bold red] '! Note: make sure you filled out the fields ![/bold red]")
-sleep(2)
-continue       
-            else:
+                    "[bold yellow] '! Note: make sure you filled out the fields ![/bold yellow]"
+                )
+                sleep(2)
+                continue
+        else:
             console.print("[bold green]SUCCESSFUL (✔)[/bold green]")
             sleep(1)
         while True:
