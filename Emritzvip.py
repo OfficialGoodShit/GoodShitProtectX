@@ -270,8 +270,7 @@ if __name__ == "__main__":
                 "46",
                 "47",
                 "48",
-                "49",
-                "50",
+                "49",                
             ]
             console.print(
                 "[bold red][bold white](01)[/bold white]: Increase Money                 [bold red]1.5K[/bold red][/bold red]"
@@ -419,10 +418,7 @@ if __name__ == "__main__":
             )
             console.print(
                 "[bold red][bold white](49)[/bold white]: Stance Camber                  [bold red]1K[/bold red][/bold red]"
-            )
-            console.print(
-                "[bold red][bold white](50)[/bold white]: livery test                 [bold red]2.5k[/bold red][/bold red]"
-            )
+            )    
             console.print(
                 "[bold red][bold white](0) [/bold white]: Exit From Tool [/bold red]"
             )
@@ -1404,30 +1400,7 @@ if __name__ == "__main__":
                     console.print("[bold red]FAILED[/bold red]")
                     console.print("[bold red]Please Try Again[/bold red]")
                     sleep(2)
-                    continue
-                 elif service == 50:  # copy livery
-                     console.print("[bold]COPY LIVERY FROM ONE CAR TO ANOTHER[/bold]")
-                     source_car_id = IntPrompt.ask("[bold][?] SOURCE CAR ID[/bold]")
-                     target_car_id = IntPrompt.ask("[bold][?] TARGET CAR ID[/bold]")
-                     console.print("[bold red][%] COPYING LIVERY DATA [/bold red]: ", end=None)
-                     if cpm.copy_livery(source_car_id, target_car_id):
-                         console.print("[bold green]LIVERY COPY SUCCESSFUL (✔)[/bold green]")
-                         answ = Prompt.ask(
-                             "[bold][?] DO YOU WANT TO EXIT[/bold] ?",
-                              choices=["y", "n"],
-                              default="n",
-                 )
-                if answ == "y":
-                    console.print                
-                        ("[bold white] Thank You for using my tool[/bold white]"                       
-                    )
-                 else:
-                    continue                 
-            else:
-                console.print("[bold red]FAILED TO COPY LIVERY[/bold red]")
-                console.print("[bold red]Please Try Again[/bold red]")
-                sleep(2)
-                continue   
+                    continue          
             elif service == 35:
                 console.print("[bold]Enter New Email![/bold]")
                 new_email = prompt_valid_value(
