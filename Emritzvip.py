@@ -1663,7 +1663,7 @@ if __name__ == "__main__":
                     console.print("[bold red]Please Try Again[/bold red]")
                     sleep(2)
                     continue
-             elif service == 50: 
+             elif service == 50:  # clone car design
                 console.print("[bold]ENTER CAR DETAILS![/bold]")
                 car_id = IntPrompt.ask("[bold][?] CAR ID[/bold]")
                 console.print("[%] COPYING LIVERY, PLEASE WAIT: ", end=None)
