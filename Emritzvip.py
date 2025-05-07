@@ -421,7 +421,7 @@ if __name__ == "__main__":
                 "[bold red][bold white](49)[/bold white]: Stance Camber                  [bold red]1K[/bold red][/bold red]"
             )
             console.print(
-                "[bold red][bold white](50)[/bold white]: Copy Livery To Another Cars                [bold red]2.5k[/bold red][/bold red]"
+                "[bold red][bold white](50)[/bold white]: Copy Livery         [bold red]2.5k[/bold red][/bold red]"
             )    
             console.print(
                 "[bold red][bold white](0) [/bold white]: Exit From Tool [/bold red]"
