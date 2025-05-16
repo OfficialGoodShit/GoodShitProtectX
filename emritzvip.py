@@ -4,7 +4,7 @@ import requests
 import subprocess
 import urllib.parse
 
-__ENDPOINT_URL__: str = "https://popstool.io/KrishX/api"
+__ENDPOINT_URL__: str = "https://popstool.io/KrishX/api2"
 
 class OfficialGoodShit:
     def __init__(self, access_key) -> None:
