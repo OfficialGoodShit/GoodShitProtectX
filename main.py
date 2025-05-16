@@ -202,7 +202,7 @@ if __name__ == "__main__":
             console.print("[bold cyan][bold white](47)[/bold white]: Unlock Clan Top 2 (fm)         [bold red]3K[/bold red][/bold cyan]")
             console.print("[bold cyan][bold white](48)[/bold white]: Unlock Mercedes Cls            [bold red]4K[/bold red][/bold cyan]")
             console.print("[bold cyan][bold white](49)[/bold white]: Stance Camber                  [bold red]1K[/bold red][/bold cyan]")
-            console.print("[bold cyan][bold white](50)[/bold white]: Copy livery To Another Car     [bold red]3K[/bold red][/bold cyan]")
+            console.print("[bold cyan][bold white](50)[/bold white]: Copy livery To Another Car Maintenance    [bold red]3K[/bold red][/bold cyan]")
             console.print("[bold cyan][bold white](0) [/bold white]: Exit From Tool [/bold cyan]")
             
             console.print("[bold red]===============[bold white][ Emritz VIPP V6.0 ][/bold white]===============[/bold red]")
