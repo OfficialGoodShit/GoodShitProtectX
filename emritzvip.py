@@ -1,23 +1,26 @@
-import requests
+from licensing.models import *
+from licensing.methods import Key, Helpers
 
-license_key = input("Enter your license key: ")
-product_id = "fdd26e82-3513-4b4c-9160-ff772a1fc78a"
-access_token = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzY29wZSI6ImFjdGl2YXRpb246cmVhZCIsInN1YiI6ImI2ZDYwN2ZlLTg4ZTgtNGE3MC1iNmQ3LTM2ZDgzNjU4YjBkZiIsImVtYWlsIjoib2ZmaWNpYWxnb29kc2hpdEBnbWFpbC5jb20iLCJqdGkiOiI1NzZmYWU3Ny0xYTE0LTQ5MTEtYmVhOC1jMjdiMmZkMDcwOTIiLCJpYXQiOjE3NDc0NDgxMDcsInRva2VuX3VzYWdlIjoicGVyc29uYWxfYWNjZXNzX3Rva2VuIiwidGVuYW50aWQiOiJhOTEyOGIzNC0zOTBmLTRiNTctYjYwOC02NmNhNjYwY2ZjMTkiLCJhdWQiOiJodHRwczovL2FwaS5jcnlwdGxleC5jb20ifQ.TGCk3JxqQ77SL84-2QJ1vQSxVwPcqwpHmCs4IZa9cXlxZGAYOaB1A5TqFUhSojo_YmMFBBiCE14lQip9x9o9iGxT6NP5XIWHbo8bn2QZefk0dulKVQ6OIgpSoZV7-ga_vrd2DqUDEaX9PHdwZ5MN9p7LP5rWsQN7jV87Q4WJS5njeM0Yo7JE-mItCJtQHrWxHOmq5Wraf9RZHz-I_UQpik2yD1QfPsKZoOiPgDa1HGOSEhT9zNX00oXWA8NzHtbhYfKqqHiJ3JKiBqfPBgEDWpd7DMik4Xiz27WyYVaI-M7Sa4CGvxRwDEXzKtwJwIBbLyiPa9xFojxcbynf2xaPWg"  # galing sa Cryptlex dashboard
+RSAPubKey = "<RSAKeyValue><Modulus>viG4RceywP4Lkr6v7v4oexngWKf5nC3A2+Ug58tW1PZftqVTWNRf1FL8GG9rwaSxzpGMHhuKxHH2rb7x3p48VFdtX8JUvhm12IgilJkEdZhWWOG3yD+0B3vh5931ewUJAWwxoqEFZCZyT+woQo6fL6zqtvip+KpMiMCU3B/BuROfKo7BNNCXrAE1DT0a6v8zx4ggFcBEACwSdzo0cYvkTbF6ZTX06uFXYUZmXGBSimE6yGx216E9CtvO8k6yQxvjV67xcIwaME0IVYIgPTsaesE+3mgujc919HD8Bti8+bLG9Terj62eBoYYHCbUCdHIVBXxfRa54uOuZ+8RKkAhjQ==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>"
+auth = "WyIxMDgwMDU4MjEiLCJyZkhEcU9WNCtjU0RJUnVOc2hCUXg4M3V0bkFuZHhyUW9QeVF5a1pUIl0=" ## AUTHKEY WITH ACTIVATE !
+def Authkey():
+    key = str(input(" Enter Termux Key: "))
+    result = Key.activate(token=auth,\
+        rsa_pub_key=RSAPubKey,\
+        product_id=29972, \
+        key=key,\
+        machine_code=Helpers.GetMachineCode())
 
-headers = {
-    "Authorization": f"Bearer {access_token}"
-}
-
-response = requests.get(
-    f"https://api.cryptlex.com/v3/licenses?product_id={product_id}&license_key={license_key}",
-    headers=headers
-)
-
-if response.status_code == 200 and response.json():
-    print("License is valid.")
-else:
-    print("License is invalid or not found.")
-    exit (2)
+    if result[0] == None or not Helpers.IsOnRightMachine(result[0]):
+    # an error occurred or the key is invalid or it cannot be activated
+    # (eg. the limit of activated devices was achieved)
+        print("The license does not work: {0}".format(result[1]))
+        exit(1)
+    else:
+    # everything went fine if we are here!
+        print("SUCCESSFUL (✔)")
+        pass
+Authkey()
     
 import platform
 import os
