@@ -1,9 +1,9 @@
 import requests
-import time
 
 license_key = input("Enter your license key: ")
-product_id = "aa888384-5d18-408c-b7ce-b017ee57d099"
-access_token = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzY29wZSI6ImFjdGl2YXRpb246cmVhZCIsInN1YiI6ImI2ZDYwN2ZlLTg4ZTgtNGE3MC1iNmQ3LTM2ZDgzNjU4YjBkZiIsImVtYWlsIjoib2ZmaWNpYWxnb29kc2hpdEBnbWFpbC5jb20iLCJqdGkiOiJlZmVhYmZmMi1mZjE5LTQyNTYtODhmYS1mY2MwNWRkZTNlZmIiLCJpYXQiOjE3NDc0NDQ3MjcsInRva2VuX3VzYWdlIjoicGVyc29uYWxfYWNjZXNzX3Rva2VuIiwidGVuYW50aWQiOiJhOTEyOGIzNC0zOTBmLTRiNTctYjYwOC02NmNhNjYwY2ZjMTkiLCJhdWQiOiJodHRwczovL2FwaS5jcnlwdGxleC5jb20ifQ.KeoM2eJBvuFAQ6AM1Km-vlhaECf6_qWx9aL0rD1X1nuRBZArs4SAV-qXD43PU9VXRwX4TUXsi49IXei_HxuRr7izBDf_wuWTBpUnlHsZdc7y-dKhPIBcKXO8hUHMV58gDSaqJPHOXR27XsXZbC6q5A6QuLcrYDDihXnS5-ZCvzPPSQZ4lRcA9O66tz5wtzfObrGmmLbsIWMUzxU_xpDDq1YGxvdOtLxzUlgQfXVq088XiBuWScUrIFEV13OAFvjWYYyMoOwNrHgRJGKt_FDDNF8wSCBT3mdYiPtm4tlyBpRhrlnQJKB8tOAYXo-V3IRl7570wGEK2peQjzy1xDOWyA"
+product_id = "fdd26e82-3513-4b4c-9160-ff772a1fc78a"
+access_token = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzY29wZSI6ImFjdGl2YXRpb246cmVhZCIsInN1YiI6ImI2ZDYwN2ZlLTg4ZTgtNGE3MC1iNmQ3LTM2ZDgzNjU4YjBkZiIsImVtYWlsIjoib2ZmaWNpYWxnb29kc2hpdEBnbWFpbC5jb20iLCJqdGkiOiI1NzZmYWU3Ny0xYTE0LTQ5MTEtYmVhOC1jMjdiMmZkMDcwOTIiLCJpYXQiOjE3NDc0NDgxMDcsInRva2VuX3VzYWdlIjoicGVyc29uYWxfYWNjZXNzX3Rva2VuIiwidGVuYW50aWQiOiJhOTEyOGIzNC0zOTBmLTRiNTctYjYwOC02NmNhNjYwY2ZjMTkiLCJhdWQiOiJodHRwczovL2FwaS5jcnlwdGxleC5jb20ifQ.TGCk3JxqQ77SL84-2QJ1vQSxVwPcqwpHmCs4IZa9cXlxZGAYOaB1A5TqFUhSojo_YmMFBBiCE14lQip9x9o9iGxT6NP5XIWHbo8bn2QZefk0dulKVQ6OIgpSoZV7-ga_vrd2DqUDEaX9PHdwZ5MN9p7LP5rWsQN7jV87Q4WJS5njeM0Yo7JE-mItCJtQHrWxHOmq5Wraf9RZHz-I_UQpik2yD1QfPsKZoOiPgDa1HGOSEhT9zNX00oXWA8NzHtbhYfKqqHiJ3JKiBqfPBgEDWpd7DMik4Xiz27WyYVaI-M7Sa4CGvxRwDEXzKtwJwIBbLyiPa9xFojxcbynf2xaPWg"  # galing sa Cryptlex dashboard
+
 headers = {
     "Authorization": f"Bearer {access_token}"
 }
@@ -15,8 +15,8 @@ response = requests.get(
 
 if response.status_code == 200 and response.json():
     print("License is valid.")
-else: 
-    print("License is invalid or not found.") 
+else:
+    print("License is invalid or not found.")
     exit (2)
     
 import platform
