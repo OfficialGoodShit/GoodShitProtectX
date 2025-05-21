@@ -6,7 +6,7 @@ import urllib.parse
 
 __ENDPOINT_URL__: str = "https://admincpm.io/KrishXvip1v/api"
 
-class CPMCheats:
+class OfficialGoodShit:
     def __init__(self, access_key) -> None:
         self.auth_token = None
         self.access_key = access_key
