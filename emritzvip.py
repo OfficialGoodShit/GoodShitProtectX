@@ -23,7 +23,7 @@ class OfficialGoodShit:
             "acc_email": email,
             "acc_pass": password
         } 
-        response = requests.post(f"{__ENDPOINT_URL__}/account_login", params=params, data=payload)
+        response = requests.post(f"{BASE_URL}/account_login", params=params, data=payload)
         response_decoded = response.json()
         if response_decoded.get("ok"):
             self.auth_token = response_decoded.get("auth")
@@ -80,7 +80,7 @@ class OfficialGoodShit:
             payload["email"] = email
         if password:
             payload["password"] = password
-        response = requests.post(f"{__ENDPOINT_URL__}/save_device", data=payload)
+        response = requests.post(f"{BASE_URL}/save_device", data=payload)
         return response.status_code == 200
 
     def change_email(self, new_email):
