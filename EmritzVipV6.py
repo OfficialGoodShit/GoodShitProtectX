@@ -12,7 +12,7 @@ from rich.style import Style
 import pystyle
 from pystyle import Colors, Colorate
 
-from emritzvip import OfficialGoodShit
+from testdevice import OfficialGoodShit
 
 def signal_handler(sig, frame):
     print("\n Bye Bye...")
